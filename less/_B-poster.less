@@ -1,0 +1,170 @@
+//
+// blog list
+// --------------------------------------------------
+
+main {
+    margin-top: 20px;
+    .back-1{
+        margin-top: 30px;
+        padding: 25px;
+        background-color: rgba(255,255,255,0.25);
+        @media (max-width:530px) {
+            padding: 0;
+        }
+        .back-2 {
+            background-color: rgba(255,255,255,0.7);
+            padding: 25px;
+            position: relative;
+            .title{
+                h1{
+                    font-size: 40px;
+                    margin-top: 0;
+                    margin-bottom: 16px;
+                    color: #4cae4c;
+                    text-shadow: 2px 2px 3px rgba(18, 68, 21, 0.98);
+                    word-spacing: 1.25em;
+
+                }
+                .time{
+                    float: right;
+                    display: block;
+                    width: 100px;
+                    height: 30px;
+                    background-color: #0E9A00;
+                    color: #ffffff;
+                    position: absolute;
+                    right: 50px;
+                    top: 45px;
+                    border-radius: 5px;
+                    text-align: center;
+                    line-height: 30px;
+                }
+                .gap-line{
+                    width: 100%;
+                    height: 2px;
+                    background-color: #4cae4c;
+                    margin: 2px;
+                    box-shadow: 0 0 10px rgba(76, 174, 76, 0.5);
+                }
+
+            }
+            .p-section{
+                h3{
+                    font-size: 28px;
+                }
+                i{
+                    color:#3faa05;
+                }
+                p{
+                    text-indent: 2em;
+                    font-size: 1.2em;
+                    line-height: 1.68em;
+                }
+                pre>code{
+                    font-size: 1.25em;
+                }
+                .image{
+                    text-align: center;
+                    padding: 10px;
+                }
+                img{
+                    border-radius: 10px;
+                    width: 80%;
+                    height: auto;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+                ul{
+                    margin-left: 2em ;
+                    font-size: 1.1em ;
+                    line-height: 1.5em ;
+                }
+                h4{
+                    font-size: 18px ;
+                    font-weight: 500;
+                    margin: 7px 0;
+                    >i{
+                        color: #000000;
+                        font-size: 16px ;
+                    }
+                }
+                .browser{
+                    display: block;
+                    text-align: center;
+                    table {
+                        border-top: 2px solid #3a3936;
+                        border-bottom: 2px solid #3a3936;
+                        border-collapse: collapse;
+                        margin: 0 auto;
+                        border-left: none;
+                        border-right: none;
+                        th{
+                            padding: 5px 25px;
+                            text-align: center;
+                            border-bottom: 1px solid #000000
+                        }
+                        td{
+                            padding: 3px 8px;
+                        }
+                    }
+                    img{
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+            .gap-line{
+                width: 100%;
+                height: 1px;
+                background-color: #4cae4c;
+                margin: 6px;
+            }
+
+        }
+
+
+    }
+    .post{
+        margin: 30px;
+        button{
+            font-size: 1.25em;
+            border-radius: 10px;
+        }
+        .prev{
+            margin-left: 4em;
+        }
+        .next{
+            float: right;
+            margin-right: 4em;
+        }
+    }
+}
+.return-top {
+    width: 50px;
+    height: 70px;
+    background: rgba(48, 151, 55, 0.9);
+    border-radius: 0.25em;
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+    &:focus,
+    &:hover{
+        background: rgba(57, 187, 64, 0.9);
+    }
+    .return-top-a{
+        color: white;
+        font-size: 15px;
+        &:focus,
+        &:hover{
+            text-decoration: none;
+        }
+        >i{
+            display: block;
+            width: 14px;
+            margin: 10px auto 0;
+        }
+    }
+}

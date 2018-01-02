@@ -1,0 +1,234 @@
+//
+// home
+// --------------------------------------------------
+
+
+
+//大幕基础部分
+
+#poster{
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 595px;
+    position: relative;
+    z-index: 99;
+    .banner {
+        width: 100%;
+        height: 288px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin: -195px 0 0 0;
+        background-color: @navber-Normal-Bg;
+        @media (max-width: 991px) {
+            height: 576px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin: -288px 0 0 0;
+        }
+        .personal-pic {
+            width: 380px;
+            height: 380px;
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+            overflow: hidden;
+            background-size: cover;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+            margin: -46px 0 0 -190px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            @media (max-width: 991px) {
+                width: 260px;
+                height: 260px;
+                border-radius: 130px;
+                margin: 14px 0 0 -130px;
+            }
+        }
+        .picture-pause {
+            animation-play-state: paused;
+            -webkit-animation-play-state: paused; /* Safari 和 Chrome */
+        }
+        .musicControl {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -60px 0 0 -30px;
+            z-index: 999;
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 25px;
+            text-align: center;
+            line-height: 50px;
+            @media (max-width: 991px) {
+                width: 46px;
+                height: 46px;
+                border-radius: 23px;
+                margin: -23px 0 0 -23px;
+                font-size: 20px;
+                line-height: 36px;
+            }
+            &:hover{
+                color: #238114;
+            }
+        }
+
+        //   大幕文字部分
+        .personal-instr {
+            color: #B4FF8C;
+            @media (max-width: 991px) {
+                padding-top: 20px;
+            }
+            > h1 {
+                padding: 20px 0 0 20px;
+                font-size: 60px;
+                @media (max-width: 1417px) {
+                    padding-top: 0;
+                    margin-top: 10px;
+                }
+                @media (max-width: 1200px) {
+                    padding-bottom: 10px;
+                }
+                @media (max-width: 991px) {
+                    font-size: 55px;
+                }
+                @media (max-width: 530px){
+                    font-size: 39px;
+                }
+            }
+            > p {
+                font-size: 40px;
+                @media (max-width: 1200px) {
+                    font-size: 35px;
+                }
+                @media (max-width: 530px){
+                    font-size: 32px;
+                }
+            }
+            > .txt {
+                word-spacing: 8px;
+                font-size: 20px;
+                line-height: 1.5em;
+                @media (max-width: 1200px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 530px){
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .navigator{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 100px;
+        margin: 0 auto;
+        @media (max-width:992px) and (min-height: 830px){
+                position: absolute;
+                bottom: 65px;
+                margin: 0 auto;
+        }
+        @media (max-height: 830px){
+                display: none;
+        }
+        >.text-center{
+            >div{
+                display: block;
+                width: 100px;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+            >div:nth-child(1){
+                color: rgba(180, 255, 140, 0.83);
+                -webkit-animation: bounce-up 1.4s linear infinite;
+                animation: bounce-up 1.4s linear infinite;
+            }
+            >div:nth-child(2){
+                color: #99e679;
+                -webkit-animation: bounce-up 1.4s linear infinite;
+                animation: bounce-up 1.4s linear infinite;
+            }
+            >div:nth-child(3){
+                color: #88d073;
+            }
+            .section-a-hover{
+                color: #70ff5a
+            }
+        }
+
+    }
+
+}
+
+//  图片旋转效果
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.Rotation{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 15s linear infinite;
+    -moz-animation: rotation 15s linear infinite;
+    -webkit-animation: rotation 15s linear infinite;
+    -o-animation: rotation 15s linear infinite;
+}
+
+//字体
+.fonten {font-family: "Trebuchet MS";}
+.fontcn {font-family: "STXingkai";}
+
+
+@-webkit-keyframes bounce-up {
+    25% {-webkit-transform: translateY(5px);}
+    50%, 100% {-webkit-transform: translateY(0);}
+    75% {-webkit-transform: translateY(-5px);}
+}
+
+@keyframes bounce-up {
+    25% {transform: translateY(5px);}
+    50%, 100% {transform: translateY(0);}
+    75% {transform: translateY(-5px);}
+}
+
+
+
+
+.return-top {
+    width: 50px;
+    height: 70px;
+    background: rgba(48, 151, 55, 0.9);
+    border-radius: 0.25em;
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+    &:focus,
+    &:hover{
+        background: rgba(57, 187, 64, 0.9);
+    }
+    .return-top-a{
+        color: white;
+        font-size: 15px;
+        &:focus,
+        &:hover{
+            text-decoration: none;
+        }
+        >i{
+            display: block;
+            width: 14px;
+            margin: 10px auto 0;
+        }
+    }
+}

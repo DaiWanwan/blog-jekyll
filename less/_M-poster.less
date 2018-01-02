@@ -1,0 +1,152 @@
+//
+// Mood
+// --------------------------
+
+html,body{
+    min-width: 992px;
+}
+.booklet{
+    -moz-box-shadow:0 0 1px #fff;
+    -webkit-box-shadow:0 0 1px #fff;
+    box-shadow:0 0 1px #fff;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    .b-wrap-left  {
+        background:#fff url(../img/left_bg.jpg) no-repeat top left;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topleft:10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .b-wrap-right {
+        background:#efefef url(../img/right_bg.jpg) no-repeat top left;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .b-counter {
+        bottom:10px;
+        position:absolute;
+        display:block;
+        width:90%;
+        height:20px;
+        border-top:1px solid #ddd;
+        color:#222;
+        text-align:center;
+        font-size:12px;
+        padding:5px 0 0;
+        background:transparent;
+        -moz-box-shadow:0 -1px 1px #fff;
+        -webkit-box-shadow:0 -1px 1px #fff;
+        box-shadow:0 -1px 1px #fff;
+        opacity:0.8;
+    }
+
+}
+.book_wrapper{
+    margin: 65px auto;
+    padding-top:50px;
+    width:905px;
+    height:590px;
+    position:relative;
+    background:transparent url(../img/bg.png) no-repeat 9px 27px;
+    z-index: 999;
+    .b-pagelist{
+        padding: 10px;
+        >img{
+            margin:0 0 10px 25px;
+            width:330px;
+            padding:4px;
+            -moz-box-shadow:1px 1px 5px #000000;
+            -webkit-box-shadow:1px 1px 5px #000000;
+            box-shadow:1px 1px 5px #000000;
+        }
+        h1{
+            color:#13386a;
+            text-align: center;
+            margin:10px 5px 10px 15px;
+            font-size:26px;
+            background:transparent url(../img/h1.png) no-repeat bottom left;
+            padding-bottom:10px;
+        }
+        p{
+            font-size: 16px;
+            text-indent: 2em;
+            line-height: 1.5em;
+            margin:5px 15px;
+        }
+        span {
+            font-size: 13px;
+            position: absolute;
+            bottom: 35px;
+            right: 20px;
+        }
+    }
+
+    a#next_page_button,
+    a#prev_page_button{
+        display:none;
+        position:absolute;
+        width:41px;
+        height:40px;
+        cursor:pointer;
+        margin-top:-20px;
+        top:50%;
+        /*background:transparent url(../images1/buttons.png) no-repeat 0px -40px;*/
+    }
+    a#prev_page_button{
+        left:-30px;
+        i{
+            font-size: 45px;
+            color:#0b2a06c2;
+            &:focus,
+            &:hover{
+                color: rgba(16, 106, 7, 0.76);
+            }
+        }
+    }
+    a#next_page_button{
+        right:-30px;
+        i{
+            font-size: 45px;
+            color:#0b2a06c2;
+            &:focus,
+            &:hover{
+                color: rgba(16, 106, 7, 0.76);
+            }
+        }
+    }
+    .loading{
+        width:160px;
+        height:56px;
+        position: absolute;
+        top:50%;
+        margin-top:-28px;
+        right:135px;
+        line-height:56px;
+        color:#fff;
+        padding-left:60px;
+        font-size:15px;
+        background: #000 url(../img/ajax-loader.gif) no-repeat 10px 50%;
+        opacity: 0.7;
+        z-index:9999;
+        -moz-border-radius:20px;
+        -webkit-border-radius:20px;
+        border-radius:20px;
+        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+    }
+}
+
+/*小树生长*/
+#tree{
+    position: fixed;
+    bottom: 15px;
+    right: -60px;
+    z-index: 3;
+}

@@ -1,0 +1,29 @@
+---
+layout: default
+title:
+---
+
+<section id="cd-timeline">
+    {% for post in paginator.posts %}
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img">
+            <i class="fa  fa-pencil-square-o"></i>
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a><i class="fa fa-book"></i></h2>
+            <div class="tags">
+                {% for item in post.tags %}
+                <span class="label">{{item}}</span>
+                {% endfor %}
+
+            </div>
+            <p>{{post.description}}</p>
+            <a href="{{site.baseurl}}/{{ post.url }}">
+                <button  type="button" class="btn btn-success">阅读全文 <i class="fa fa-angle-double-right"></i></button>
+            </a>
+            <span class="cd-date"> <i class="fa fa-clock-o"></i>{{ post.date | date:"%Y-%m-%d"}}</span>
+        </div>
+    </div>
+    {% endfor %}
+</section>

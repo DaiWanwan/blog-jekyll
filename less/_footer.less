@@ -1,0 +1,35 @@
+//
+// footer
+// --------------------------------------------------
+
+
+ul._footer {
+    background-color: rgba(0, 0, 0, 0.41);
+    padding: 5px 5px  0  5px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 30px;
+    > li {
+        display: inline-block;
+        > a {
+            font-size: 15px;
+            line-height: 20px;
+            color: @navber-Normal-Color;
+            padding-right: 20px;
+            &:active,
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: @navber-Hover-Color;
+            }
+        }
+    }
+}
+
+//锁定在在底部
+ul._footer-fixed-bottom{
+    position: fixed;
+    bottom: 0;
+}
