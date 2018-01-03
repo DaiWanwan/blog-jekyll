@@ -3805,7 +3805,7 @@ body {
   display: block;
 }
 body {
-  background: url({{site.production_url}}/blog-jekyll/assets/img/backgroud.jpg) no-repeat fixed;
+  background: url(../assets/img/backgroud.jpg) no-repeat fixed;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
