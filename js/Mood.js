@@ -5,7 +5,6 @@ $(function() {
     var $loading		= $('#loading');
     var $mybook_images	= $mybook.find('img');
     var cnt_images		= $mybook_images.length;
-    console.log(cnt_images);
     var loaded			= 0;
     //preload all the images in the book,
     //and then call the booklet plugin
