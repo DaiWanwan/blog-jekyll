@@ -3913,6 +3913,7 @@ main .back-1 .back-2 .p-section ul {
   margin-left: 2em ;
   font-size: 1.1em ;
   line-height: 1.5em ;
+  list-style-type: none;
 }
 main .back-1 .back-2 .p-section h4 {
   font-size: 18px ;

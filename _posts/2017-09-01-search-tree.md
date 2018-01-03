@@ -2,20 +2,19 @@
 layout: page
 title: "二叉搜索树"
 description: "树是计算机科学中经常用到的一种数据结构。树是一种非线性的数据结构，以分层的方式存储数据。树被用来存储具有层级关系的数据，比如文件系统中的文件，有序列表等。"
-category: 数据结构与算法 
-tags: [数据结构,Javascript,读书笔记]
+category: blogText
+tags: [数据结构,算法,读书笔记]
 ---
 
-
 <div class="p-section">
-	<h3>树的定义</h3>
+	<h3><i class="fa fa-star"></i> 树的定义</h3>
 	<p>树是由一组以边连接的节点组成，边描述了各节点之间的关系。一棵树最上面的节点称为根节点，如果一个节点下面连接多个节点，那么该节点称为父节点，它下面的节点称为子节点。一个节点可以有0个、1个或多个子节点。没有任何子节点的节点称为叶子节点。沿着一组特定的边，可以从一个节点走到另一个与它不直接相连的节点，从一个节点到另一个节点的这一组边称为路径，图中用虚线表示。以某种特定的顺序访问树中所有的节点称为树的遍历。树可以分为几个层次，根节点是第0层，它的子节点是第1层，子节点的子节点是第2层，以此类推。树中任何一层的节点可以都看做是子树的根，该子树包含根节点的子节点，子节点的子节点等。我们定义树的层数就是树的深度。</p>
 	<div class="image"><img src="http://ffandii.github.io/Personal-blog/images/post/ds&al/tree1.png" width="621" height="429"/></div>
 	<p>二叉树每个节点的子节点不允许超过两个，一个父节点的两个子节点分别称为左节点和右节点。在一些二叉树的实现中，左节点包含一组特定的值，右节点包含另一组特定的值。</p>
 </div>
-
+<div class="gap-line"></div>
 <div class="p-section">
-	<h3>实现二叉搜索树</h3>
+	<h3><i class="fa fa-star"></i> 实现二叉搜索树</h3>
 	<p>二叉搜索树由节点组成，所以我们要定义的第一个对象是<code>Node</code>类。</p>
 <pre><code class="javascript">function Node(data,left,right){
    this.data=data;

@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Doris·婉の博客-About</title>
-    <meta name="description" content="">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
 
     <!--<link rel="stylesheet" href="css/bootstrap.css">-->
-    <link rel="stylesheet" href="css/__About.min.css">
+    <link rel="stylesheet" href="css/About.min.css">
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -40,7 +41,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/logo2.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo2.png" alt="logo"></a>
                 </div>
                 <div class="col-lg-8 right">
                     <div class="navbar-collapse collapse" id="navbar-collapse-right">
@@ -58,7 +59,7 @@
                                 <i class="fa fa-user"></i> <span class="nav-mess"> About</span>
                             </a></li>
                             <li class="top-music visible-lg visible-md visible-sm">
-                                <audio id="bgMusic" src="img/music.mp3" autoplay loop="loop"></audio>
+                                <audio id="bgMusic" src="assets/img/music.mp3" autoplay loop="loop"></audio>
                                 <a class="musicControl"><i class="fa fa-pause"></i><span class="nav-mess"> Music</span>
                                 </a>
                             </li>
@@ -76,7 +77,7 @@
 <main>
     <div class="row  left-info" >
         <div class="col-sm-5 image">
-            <img src="img/me.jpg" alt="Personal Photos">
+            <img src="assets/img/me.jpg" alt="Personal Photos">
         </div>
         <div class="col-sm-7 education">
             <div class="major-header">
