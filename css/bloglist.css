@@ -3957,6 +3957,11 @@ main .back-1 .back-2 .gap-line {
 main .post {
   margin: 30px;
 }
+@media (max-width: 768px) {
+  main .post {
+    margin: 30px 15px;
+  }
+}
 main .post button {
   font-size: 1.25em;
   border-radius: 10px;
@@ -3964,9 +3969,19 @@ main .post button {
 main .post .prev {
   margin-left: 4em;
 }
+@media (max-width: 768px) {
+  main .post .prev {
+    margin-left: 1em;
+  }
+}
 main .post .next {
   float: right;
   margin-right: 4em;
+}
+@media (max-width: 768px) {
+  main .post .next {
+    margin-right: 1em;
+  }
 }
 .return-top {
   width: 50px;

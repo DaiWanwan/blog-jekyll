@@ -3,7 +3,7 @@ layout: page
 title: "函数表达式"
 description: "函数表达式的特征；使用函数实现递归；使用闭包定义私有变量"
 category: blogText
-tags: [Javascript,读书笔记]
+tags: [JavaScript,读书笔记]
 ---
 
 <div class="p-section">

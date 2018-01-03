@@ -1,7 +1,11 @@
 //
 // ABOUT
 // --------------------------------------------------
-
+html,body{
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+}
 main{
     width: 80%;
     position: relative;
@@ -26,7 +30,10 @@ main{
         background: url(http://5b0988e595225.cdn.sohucs.com/images/20170830/ba0e3136eb3b44f8ad770c8319e4920c.jpeg)  no-repeat fixed;
         background-size: cover;
     }
-    .left-info{
+    #left-info{
+        position: inherit;
+        width: 100%;
+        z-index: 11;
         .image{
             text-align: center;
             vertical-align: middle;
@@ -97,6 +104,7 @@ main{
         font-size: 17px;
         width: 80%;
         margin: 30px auto;
+        z-index: 11;
         @media (max-width: 768px) {
             width: 100%;
             margin: 30px 0 30px 0;
@@ -187,8 +195,9 @@ main{
 }
  #target{
      width:100%;
-     height:125%;
-     z-index: 9;
-     position: absolute;
-     top:0;
+     height:100%;
+     z-index: 5;
+     position: fixed;
+     top: 0;
  }
+

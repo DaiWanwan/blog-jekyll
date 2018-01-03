@@ -27,7 +27,24 @@ function _musicControl () {
     });
 }
 _musicControl();
+$(function() {
 
+    var $mywrap 		= $('#wrap');
+    var $loading		= $('#loading');
+    var $mywrap_images	= $mywrap .find('img');
+    var cnt_images		= $mywrap_images.length;
+    $mywrap_images.each(function (i) {
+        var img=new Image();
+        img.onload=function () {
+            img.onload=null;
+            if(i>=cnt_images-1){
+                $loading.fadeOut();
+            }
+        };
+        img.src=$mywrap_images[i].src;
+    })
+
+});
 //   1.翻面控制
 function turn (elem) {
     var cls = elem.className;

@@ -11,10 +11,10 @@ tags: [CSS,布局模式]
 	<h3><i class="fa fa-star"></i> CSS2布局模式</h3>
 	<p>谈到布局，CSS2.1中定义了四种布局模式，由一个盒与其兄弟、祖先盒的关系决定其尺寸与位置的算法。</p>
 	<ul>
-		<li><span class="icon fa fa-check"></span>块布局：呈现文档的布局模式。</li>
-		<li><span class="icon fa fa-check"></span>行内布局：呈现文本的布局模式。</li>
-		<li><span class="icon fa fa-check"></span>表格布局：用格子来呈现2D数据的布局模式。</li>
-		<li><span class="icon fa fa-check"></span>定位布局：能够直接的定位元素的布局模式，定位元素基本与其他元素没有任何关系。</li>
+		<li><span class="icon fa fa-check"></span> 块布局：呈现文档的布局模式。</li>
+		<li><span class="icon fa fa-check"></span> 行内布局：呈现文本的布局模式。</li>
+		<li><span class="icon fa fa-check"></span> 表格布局：用格子来呈现2D数据的布局模式。</li>
+		<li><span class="icon fa fa-check"></span> 定位布局：能够直接的定位元素的布局模式，定位元素基本与其他元素没有任何关系。</li>
 	</ul>
 </div>
 <div class="gap-line"></div>
@@ -23,12 +23,12 @@ tags: [CSS,布局模式]
 	<p>CSS3引入的布局模式Flexbox布局，主要思想是让容器有能力让其子项目能够改变其宽度、高度（甚至顺序），以最佳方式填充可用空间（主要是为了适应所有类型的显示设备和屏幕大小）。Flex容器会使子项目（伸缩项目）扩展来填满可用空间，或缩小以防止溢出容器。最重要的是，Flexbox布局方向不可预知，不想常规的布局，块就是从上到下，内联就是从左到右。而那些常规的适合页面布局，但对于支持大型或者复杂的应用程序（特别是涉及取向改变、缩放和收缩等）就缺乏灵活性。</p>
 	<p>Flexbox布局对于设计比较复杂的页面非常有用。可以轻松实现屏幕和浏览器窗口大小发生变化时保持元素的相对位置和大小不变。同时减少了依赖于浮动布局实现元素位置的定义以及重置元素的大小。综合而言，Flexbox布局功能主要具有以下几点。</p>
 	<ul>
-		<li><span class="icon fa fa-check"></span>屏幕和浏览器窗口大小发生改变也可以灵活调整布局。</li>
-		<li><span class="icon fa fa-check"></span>指定伸缩项目沿着主轴或侧轴按比例分配额外空间，从而调整伸缩项目的大小。</li>
-		<li><span class="icon fa fa-check"></span>指定伸缩项目沿着主轴或侧轴将伸缩容器额外空间分配到伸缩项目之前、之后或之间。</li>
-		<li><span class="icon fa fa-check"></span>指定如何将垂直于元素布局轴的额外空间分布到该元素周围。</li>
-		<li><span class="icon fa fa-check"></span>指定元素在页面上的布局方向。</li>
-		<li><span class="icon fa fa-check"></span>按照不同于DOM所指定的排序方式对屏幕上的元素重新排序。</li>
+		<li><span class="icon fa fa-check"></span> 屏幕和浏览器窗口大小发生改变也可以灵活调整布局。</li>
+		<li><span class="icon fa fa-check"></span> 指定伸缩项目沿着主轴或侧轴按比例分配额外空间，从而调整伸缩项目的大小。</li>
+		<li><span class="icon fa fa-check"></span> 指定伸缩项目沿着主轴或侧轴将伸缩容器额外空间分配到伸缩项目之前、之后或之间。</li>
+		<li><span class="icon fa fa-check"></span> 指定如何将垂直于元素布局轴的额外空间分布到该元素周围。</li>
+		<li><span class="icon fa fa-check"></span> 指定元素在页面上的布局方向。</li>
+		<li><span class="icon fa fa-check"></span> 按照不同于DOM所指定的排序方式对屏幕上的元素重新排序。</li>
 	</ul>
 </div>
 <div class="gap-line"></div>

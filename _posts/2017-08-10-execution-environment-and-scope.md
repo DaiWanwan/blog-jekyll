@@ -3,7 +3,7 @@ layout: page
 title: "执行环境及作用域"
 description: "执行环境定义了变量或函数有权访问的其他数据，决定了它们各自的行为。当代码在一个环境中执行时，会创建变量对象的一个作用域链，保证对执行环境有权访问的所有变量和函数的有序访问。"
 category: blogText
-tags: [Javascript,读书笔记]
+tags: [JavaScript,读书笔记]
 ---
 
  <div class="p-section">

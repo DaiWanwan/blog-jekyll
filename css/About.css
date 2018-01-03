@@ -4793,6 +4793,12 @@ ul._footer-fixed-bottom {
   position: fixed;
   bottom: 0;
 }
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 400px;
+}
 main {
   width: 80%;
   position: relative;
@@ -4822,62 +4828,67 @@ main::before {
   background: url(http://5b0988e595225.cdn.sohucs.com/images/20170830/ba0e3136eb3b44f8ad770c8319e4920c.jpeg) no-repeat fixed;
   background-size: cover;
 }
-main .left-info .image {
+main #left-info {
+  position: inherit;
+  width: 100%;
+  z-index: 11;
+}
+main #left-info .image {
   text-align: center;
   vertical-align: middle;
 }
-main .left-info .image > img {
+main #left-info .image > img {
   max-width: 280px;
   width: 80%;
   min-width: 200px;
   border-radius: 25% 0 25% 0;
   border: 5px solid #ffffff;
 }
-main .left-info .education {
+main #left-info .education {
   font-size: 17px;
   color: #333333;
   line-height: 1.5em;
   max-width: 650px;
 }
 @media (max-width: 768px) {
-  main .left-info .education {
+  main #left-info .education {
     margin-top: 30px;
   }
 }
-main .left-info .education .right {
+main #left-info .education .right {
   position: absolute;
   top: 3em ;
   right: 1.5em;
   color: #333333;
 }
-main .left-info .education .right a {
+main #left-info .education .right a {
   color: #0a7d33;
   display: block;
   text-decoration: none;
 }
 @media (max-width: 992px) {
-  main .left-info .education .right span {
+  main #left-info .education .right span {
     display: none;
   }
 }
-main .left-info .education i {
+main #left-info .education i {
   font-size: 15px;
   color: #185a07;
 }
-main .left-info .education .skill {
+main #left-info .education .skill {
   padding-top: 25px;
 }
-main .left-info .education .skill .skill-list span {
+main #left-info .education .skill .skill-list span {
   width: 25%;
   text-align: right;
   display: inline-block;
 }
 @media (max-width: 500px) {
-  main .left-info .education .skill .skill-list span {
+  main #left-info .education .skill .skill-list span {
     font-size: 14px;
   }
 }
-main .left-info .education .skill .skill-list .progress {
+main #left-info .education .skill .skill-list .progress {
   width: 70%;
   text-align: left;
   float: right;
@@ -4891,6 +4902,7 @@ main .project {
   font-size: 17px;
   width: 80%;
   margin: 30px auto;
+  z-index: 11;
 }
 @media (max-width: 768px) {
   main .project {
@@ -4978,8 +4990,8 @@ main .project .project-list p a {
 }
 #target {
   width: 100%;
-  height: 125%;
-  z-index: 9;
-  position: absolute;
+  height: 100%;
+  z-index: 5;
+  position: fixed;
   top: 0;
 }
