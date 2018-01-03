@@ -45,15 +45,14 @@ $(document).ready(function() {
                 _searchlist.animate({marginTop:offsetop},{duration:1000,queue:false},"ease-out")
             }
 
-
         });
 
         $(window).on("resize",function(){
             if($(window).width()<992) {
                 _searchlist.css({marginTop:57+"px"});
+
             }
         });
-
         //   侧边栏搜索功能的实
         var _searchli=$(".sidebar-outline>li");
         var _taglist=$("#cd-timeline>.cd-timeline-block>.cd-timeline-content");
@@ -108,7 +107,6 @@ $(document).ready(function() {
 
     //    小树生长
     var drawtree = function (ctx,startx,starty,length,angle,depth,branchWidth){
-
         var rand=Math.random,
             n_length,n_angle,n_depth,maxbranch=4,
             endx,endy,maxangle=2 * Math.PI / 4;

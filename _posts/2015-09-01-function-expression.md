@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "函数表达式"
 description: "函数表达式的特征；使用函数实现递归；使用闭包定义私有变量"
 category: Javascript
