@@ -24,7 +24,7 @@ author :
   feedburner : feedname
 
 baseurl: /blog-jekyll
-production_url : http://daiwanwan.github.io
+production_url : https://daiwanwan.github.io
 highlighter: pygments
 
 host:  192.168.123.1

@@ -1,0 +1,153 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Doris·婉の博客-Gallery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/__Gallery.min.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">
+    You are using an <strong>outdated</strong> browser. Please
+    <a href="https://browsehappy.com/">upgrade your browser</a>
+    to improve your experience and security.
+</p>
+<![endif]-->
+
+
+
+<!-- Add your site or application content here -->
+
+<header >
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="navbar-header col-md-2" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navbar-collapse-right" aria-expanded="false">
+                        <span class="sr-only">导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo2.png" alt="logo"></a>
+                </div>
+                <div class="col-lg-8 right">
+                    <div class="navbar-collapse collapse" id="navbar-collapse-right">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html" name="Home" data-toggle="tooltip" data-placement="bottom" title="Home">
+                                <i class="fa fa-home"></i><span class="nav-mess"> Home</span>
+                            </a></li>
+                            <li class="active"><a href="Gallery.html" name="Gallery" data-toggle="tooltip" data-placement="bottom" title="Gallery">
+                                <i class="fa fa-image"></i> <span class="nav-mess"> Gallery</span>
+                            </a></li>
+                            <li><a href="Mood.html" name="Mood" data-toggle="tooltip" data-placement="bottom" title="Mood">
+                                <i class="fa fa-cloud"></i> <span class="nav-mess"> Mood</span>
+                            </a></li>
+                            <li><a href="About.html" name="About" data-toggle="tooltip" data-placement="auto" title="About">
+                                <i class="fa fa-user"></i> <span class="nav-mess"> About</span>
+                            </a></li>
+                            <li class="top-music visible-lg visible-md visible-sm">
+                                <audio id="bgMusic" src="img/music.mp3" autoplay loop="loop"></audio>
+                                <a class="musicControl" name="Music" data-toggle="tooltip" data-placement="auto" title="Music">
+                                    <i class="fa fa-pause"></i><span class="nav-mess"> Music</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<main>
+    <div class="wrap" id="wrap">
+        <!--.photo负责位置的居中和旋转-->
+        <div class="photo photo_front" onclick="turn(this)" id="photo_{{index}}">
+            <!--.photo-wrap 负责海报的正面与反面的翻转-->
+            <div class="photo-wrap">
+                <!--.side-front 海报正面-->
+                <div class="side side-front ">
+                    <p class="image">
+                        <img src="images/{{img}}" alt="image">
+                    </p>
+                    <p class="caption">{{caption}}</p>
+                </div>
+                <!--.side-back 海报反面-->
+                <div class="side side-back">
+                    <p class="desc">{{desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<footer>
+    <ul class="_footer _footer-fixed-bottom">
+        <li>
+            <a href="http://weibo.com/5856659777/profile?topnav=1&wvr=6&is_all=1">
+                <i class="icon fa fa-weibo"></i>
+                <span>微博</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>© 2017 戴婉婉</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/DaiWanwan">
+                <i class="icon fa fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- Modernizr -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Respond.js for IE 8 or less only -->
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/vendor/respond.min.js"></script>
+<![endif]-->
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/gallery-data.min.js"></script>
+<script src="js/gallery.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

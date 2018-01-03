@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Doris·婉の博客-Gallery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/jquery.booklet.1.1.0.min.css">
+    <link rel="stylesheet" href="css/__Mood.min.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">
+    You are using an <strong>outdated</strong> browser. Please
+    <a href="https://browsehappy.com/">upgrade your browser</a>
+    to improve your experience and security.
+</p>
+<![endif]-->
+
+
+
+<!-- Add your site or application content here -->
+
+<header >
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="navbar-header col-md-2" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navbar-collapse-right" aria-expanded="false">
+                        <span class="sr-only">导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo2.png" alt="logo"></a>
+                </div>
+                <div class="col-lg-8 right">
+                    <div class="navbar-collapse collapse" id="navbar-collapse-right">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html" name="Home" data-toggle="tooltip" data-placement="bottom" title="Home">
+                                <i class="fa fa-home"></i><span class="nav-mess"> Home</span>
+                            </a></li>
+                            <li><a href="Gallery.html" name="Gallery" data-toggle="tooltip" data-placement="bottom" title="Gallery">
+                                <i class="fa fa-image"></i> <span class="nav-mess"> Gallery</span>
+                            </a></li>
+                            <li class="active"><a href="Mood.html" name="Mood" data-toggle="tooltip" data-placement="bottom" title="Mood">
+                                <i class="fa fa-cloud"></i> <span class="nav-mess"> Mood</span>
+                            </a></li>
+                            <li><a href="About.html" name="About" data-toggle="tooltip" data-placement="auto" title="About">
+                                <i class="fa fa-user"></i> <span class="nav-mess"> About</span>
+                            </a></li>
+                            <li class="top-music visible-lg visible-md visible-sm">
+                                <audio id="bgMusic" src="img/music.mp3" autoplay loop="loop"></audio>
+                                <a class="musicControl"><i class="fa fa-pause"></i><span class="nav-mess"> Music</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 col-md-0"></div>
+            <div class="col-lg-9 col-md-12">
+                <div class="book_wrapper">
+                    <a id="next_page_button"><i class="fa  fa-chevron-circle-right"></i></a>
+                    <a id="prev_page_button"><i class="fa  fa-chevron-circle-left"></i></a>
+                    <div id="loading" class="loading">Loading...</div>
+                    <div id="mybook" style="display:none;">
+                        <div class="b-load">
+                            <div class="b-pagelist">
+                                <h1>研究生</h1>
+                                <img src="img/1.jpg" alt=""/>
+                                <p>研究生的我来到了向往已久的华科，在这一个月里，我熟悉了新的环境，认识了新的朋友，感觉非常开心<img src="QQimages/20.gif">。</p>
+                                <p>同时在这一个月我的思想转变很大，意识到本科与研究生的区别了，也意识到未来找工作的压力。
+                                    未来离找工作还有近2年，我要好好规划一下自己的未来了~</p>
+                                <span class="cd-date"><i class="fa fa-clock-o"></i> 2016-9-27</span>
+                            </div>
+                            <div class="b-pagelist">
+                                <h1>微微一笑很倾城</h1>
+                                <img src="img/2.jpg" alt=""/>
+                                <p>《微微一笑很倾城》简直太好看了，杨洋和郑爽“IT双侠”<img src="QQimages/19.gif">,少女心爆棚啊，有木有！！！
+                                    还有，学计算机的这么厉害吗<img src=" QQimages/1.gif">？我算不算<img src="QQimages/74.gif"><img src="QQimages/74.gif"><img src="QQimages/74.gif"></p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2016-10-17</span>
+                            </div>
+                            <div class="b-pagelist">
+                                <h1>C++</h1>
+                                <img src="img/3.jpg" alt="">
+                                <p>C++,我决定和你杠上了~<img src="QQimages/28.gif"></p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2016-10-20</span>
+                            </div>
+
+                            <div class="b-pagelist">
+                                <h1>学习</h1>
+                                <img src="img/4.jpg" alt="">
+                                <p>研究生课好多啊，居然要在9天连考5门，感觉我要飞了<img src="QQimages/91.gif"><img src="QQimages/91.gif">,
+                                    加油！！！<img src="QQimages/28.gif"><img src="QQimages/28.gif"><img src="QQimages/28.gif"></p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2016-12-10</span>
+                            </div>
+
+                            <div class="b-pagelist">
+                                <h1>放假</h1>
+                                <img src="img/5.jpg" alt="">
+                                <p>魔鬼考试周终于完事了，好坏尽力了，接下来吃吃喝喝，弄完好手里工作，坐等放假回家过年~</p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2016-12-20</span>
+                            </div>
+
+                            <div class="b-pagelist">
+                                <h1>日本語</h1>
+                                <p>想系统的学日语了，这样看日语电影和动漫就不用看字幕了，买书，学习!</p>
+                                <img src="img/6.jpg" alt="">
+                                <p>买了折磨多书，从初级到N2，感觉压力山大啊，不过有压力才有动力<img src="QQimages/29.gif">！</p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2017-2-24</span>
+
+                            </div>
+
+                            <div class="b-pagelist">
+                                <h1>Web</h1>
+                                <img src="img/7.jpg" alt="">
+                                <p>从和师兄师姐的聊天中，接触到了前端这个行业，稍微学习了一个星期，发现原来编程还可以这样有趣，
+                                    和之前自学Photoshop感觉差不多，终于找到目标了，前进<img src="QQimages/28.gif">！</p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2017-7-17</span>
+                            </div>
+
+                            <div class="b-pagelist">
+                                <h1>日本語能力試験</h1>
+                                <img src="img/8.jpg" alt="">
+                                <p>只学了半年的日语的我报名了“日语能力考试N2",不知道行不行，但是没有压力就没有动力，人的潜力是无限的。接下来的三个月要加油啦，,頑張ります！</p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2017-8-29</span>
+                            </div>
+
+                            <div class="b-pagelist">
+                                <h1>SPIE</h1>
+                                <img src="img/9.jpg" alt="">
+                                <p>论文写作中，加油，找到好工作，毕业是前提<img src="QQimages/19.gif"></p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2017-10-17</span>
+                            </div>
+                            <div class="b-pagelist">
+                                <h1>Blog</h1>
+                                <img src="img/10.jpg" alt="">
+                                <p>第一个前端项目Blog制作中，花了我好多心血啊，从设计到图片的制作等等<img src="QQimages/29.gif">。不过效果还是
+                                    很让我满意的，期间学会了不少新的东西<img src="QQimages/13.gif">，感觉受益匪浅，虽然还有很多不足，后期慢慢补充啦~</p>
+                                <span class="cd-date"> <i class="fa fa-clock-o"></i> 2017-12-23</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-0">
+                <canvas id='tree' width="800" height="800" class="visible-lg visible-md"></canvas>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<footer>
+    <ul class="_footer _footer-fixed-bottom">
+        <li>
+            <a href="http://weibo.com/5856659777/profile?topnav=1&wvr=6&is_all=1">
+                <i class="icon fa fa-weibo"></i>
+                <span>微博</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>© 2017 戴婉婉</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/DaiWanwan">
+                <i class="icon fa fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- Modernizr -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Respond.js for IE 8 or less only -->
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/vendor/respond.min.js"></script>
+<![endif]-->
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-migrate-3.0.1.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/jquery.easing.1.3.min.js"></script>
+<script src="js/jquery.booklet.1.1.0.min.js"></script>
+<script src="js/Mood.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
