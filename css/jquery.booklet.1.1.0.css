@@ -35,11 +35,11 @@
 	.booklet .b-wrap-right .b-counter {right:10px;}
 
    	/* Page Shadows */
-	.booklet .b-shadow-f  {right:0; top:0; position:absolute; opacity:0; background-image:url("../image/shadow-top-forward.png"); background-repeat:repeat-y; background-position:100% 0;}
-	.booklet .b-shadow-b  {left:0;  top:0; position:absolute; opacity:0; background-image:url("../image/shadow-top-back.png");    background-repeat:repeat-y; background-position:0 0;}
+	.booklet .b-shadow-f  {right:0; top:0; position:absolute; opacity:0; background-image:url("../assets/img/shadow-top-forward.png"); background-repeat:repeat-y; background-position:100% 0;}
+	.booklet .b-shadow-b  {left:0;  top:0; position:absolute; opacity:0; background-image:url("../assets/img/shadow-top-back.png");    background-repeat:repeat-y; background-position:0 0;}
 
-	.booklet .b-p0 {background-image:url("../img/shadow.png"); background-repeat:repeat-y; background-position:100% 10px;}
-	.booklet .b-p3 {background-image:url("../img/shadow.png"); background-repeat:repeat-y; background-position:0 10px;}
+	.booklet .b-p0 {background-image:url("../assets/img/shadow.png"); background-repeat:repeat-y; background-position:100% 10px;}
+	.booklet .b-p3 {background-image:url("../assets/img/shadow.png"); background-repeat:repeat-y; background-position:0 10px;}
 
    	/* Overlay Controls */
 	.booklet .b-overlay      {top:0; position:absolute; height:100%; width:50%;}
@@ -57,8 +57,8 @@
 	.booklet .b-arrow div      {display:none; text-indent:-9999px; height:170px; width:74px; position:absolute; left:0; top:25%;}
 	.booklet .b-arrow-next     {right:-80px;}
 	.booklet .b-arrow-prev     {left:-80px;}
-	.booklet .b-arrow-next div {background:url("../img/arrow-next.png") no-repeat left top;}
-	.booklet .b-arrow-prev div {background:url("../img/arrow-prev.png") no-repeat left top;}
+	.booklet .b-arrow-next div {background:url("../assets/img/arrow-next.png") no-repeat left top;}
+	.booklet .b-arrow-prev div {background:url("../assets/img/arrow-prev.png") no-repeat left top;}
 
 /* @z-index fix (needed for older IE browsers)
 ----------------------------------------*/
