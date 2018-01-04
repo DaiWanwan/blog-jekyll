@@ -30,9 +30,9 @@ var BloomFall = function(id, initConfig)
         minSpeed   : 0.5,
         maxSpeed   : 1.5,
         deepth     : 5,
-        minSize    : 0.3, //%
-        maxSize    : 0.5, //%
-        bloomCount : 600,
+        minSize    : 0.1, //%
+        maxSize    : 0.3, //%
+        bloomCount : 250,
         color      : 120 //hsl color
     };
 
