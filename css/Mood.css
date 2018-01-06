@@ -6154,7 +6154,7 @@ body {
 }
 body {
   background: #9cb499 url(../assets/img/backgroud.jpg) no-repeat fixed;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   overflow-x: hidden;
 }

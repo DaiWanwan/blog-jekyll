@@ -6267,7 +6267,7 @@ body {
 }
 body {
   background: #9cb499 url(../assets/img/backgroud.jpg) no-repeat fixed;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -6424,7 +6424,7 @@ body {
 }
 @media (max-width: 530px) {
   #poster .banner .personal-instr > h1 {
-    font-size: 39px;
+    font-size: 34px;
   }
 }
 #poster .banner .personal-instr > p {
@@ -6437,7 +6437,7 @@ body {
 }
 @media (max-width: 530px) {
   #poster .banner .personal-instr > p {
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 #poster .banner .personal-instr > .txt {
@@ -6760,7 +6760,7 @@ body {
 }
 @media (max-width: 489px) {
   #blogList .back-1 > .back-2 #cd-timeline .cd-timeline-block .cd-timeline-content > a > button {
-    padding: .35em 0.7em;
+    padding: .3em 0.55em;
   }
 }
 #blogList .back-1 > .back-2 #cd-timeline .cd-timeline-block .cd-timeline-content > .cd-date {

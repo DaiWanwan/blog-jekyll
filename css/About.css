@@ -4761,7 +4761,7 @@ body {
 }
 body {
   background: #9cb499 url(../assets/img/backgroud.jpg) no-repeat fixed;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -4819,6 +4819,7 @@ main {
 }
 @media (max-width: 768px) {
   main {
+    width: 95%;
     padding: 20px;
   }
 }
@@ -4865,7 +4866,7 @@ main #left-info .education {
 main #left-info .education .right {
   position: absolute;
   top: 3em ;
-  right: 1.5em;
+  right: 1em;
   color: #333333;
 }
 main #left-info .education .right a {
