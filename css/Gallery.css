@@ -6344,7 +6344,7 @@ main {
   display: inline-block;
   line-height: 30px;
   cursor: pointer;
-  background-color: rgba(60, 216, 67, 0.78);
+  background-color: #3ac441;
   text-align: center;
   border-radius: 50%;
   /*正常状态下缩小标签，这样点击时放大就不会影响其他*/
