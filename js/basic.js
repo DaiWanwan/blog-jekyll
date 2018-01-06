@@ -24,6 +24,8 @@ $(document).ready(function() {
         });
     }
     _musicControl();
+
+    //返回顶部的显示与隐藏
     window.onresize=resizeBannerImage;//当窗口改变宽度时执行此函数
     function resizeBannerImage() {
         if( $(window).width() > 992 && $(window).scrollTop()>200) {
@@ -41,6 +43,7 @@ $(document).ready(function() {
             $('.return-top').hide(300);
         }
     });
+    //执行事件
     $(".return-top").click(function () {
         $("html, body").animate({
             scrollTop: $("header").offset().top }, {duration: 600,easing: "swing"});

@@ -24,14 +24,16 @@ function _musicControl () {
     });
 }
 _musicControl();
+
+//   飘絮效果开始
 var BloomFall = function(id, initConfig)
 {
     var config = {
         minSpeed   : 0.5,
         maxSpeed   : 1.5,
         deepth     : 5,
-        minSize    : 0.1, //%
-        maxSize    : 0.3, //%
+        minSize    : 0.1, //%最小尺寸
+        maxSize    : 0.3, //%最大尺寸
         bloomCount : 250,
         color      : 120 //hsl color
     };
@@ -113,8 +115,8 @@ var BloomFall = function(id, initConfig)
         minSize  = base * config.minSize;
         maxSize  = base * config.maxSize;
 
-        canvas.width  = width;
-        canvas.height = height;
+        canvas.width  = width;  //区域宽度
+        canvas.height = height;  //区域高度
     };
 
     var renderBlooms = function()
@@ -181,10 +183,8 @@ var BloomFall = function(id, initConfig)
 
     construct();
 };
-
-
 var bf = new BloomFall('target');
 bf.run();
 
-
+// 飘絮效果结束
 

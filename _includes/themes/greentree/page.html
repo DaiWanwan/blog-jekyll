@@ -8,12 +8,9 @@
 
 <!-- Fav and touch icons -->
 <link rel="shortcut icon" href="{{site.production_url}}/blog-jekyll/assets/img/favicon.ico">
-
 <link rel="apple-touch-icon" href="{{site.production_url}}/blog-jekyll/assets/img/favicon.png">
-<!-- Place favicon.ico in the root directory -->
 
 <!--<link rel="stylesheet" href="css/main.css">-->
-
 <link rel="stylesheet" href="{{site.production_url}}/blog-jekyll/css/railscasts.css">
 <script  type="text/javascript" src="{{site.production_url}}/blog-jekyll/js/highlight.pack.js"></script>
 <link rel="stylesheet" href="{{site.production_url}}/blog-jekyll/css/bloglist.min.css">
@@ -26,8 +23,7 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please<a href="https://browsehappy.com/">upgrade your browser</a>to improve your experience and security.</p>
 <![endif]-->
 
-<!-- Add your site or application content here -->
-
+<!--导航栏开始-->
 <header >
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -72,7 +68,9 @@
         </div>
     </nav>
 </header>
+<!--导航栏结束-->
 
+<!--主要内容区域-->
 <main>
     <div class="post-contents">
         <div class="container-fluid">
@@ -92,6 +90,7 @@
                             {{ content }}
                         </div>
                     </div>
+                    <!--上一篇和下一篇的按钮-->
                     <div class="post">
                         {% if page.previous %}
                         <a href="{{site.production_url}}/blog-jekyll/{{ page.previous.url }}">
@@ -119,16 +118,12 @@
     </div>
 </main>
 
-
-
-
-
-
-
+<!--返回顶部-->
 <diV class="btn btn-success return-top">
     <div class="return-top-a"><i class="fa fa-angle-double-up"></i>Top</div>
 </diV>
 
+<!--页脚-->
 <footer>
     <ul class="_footer">
         <li>
@@ -150,20 +145,6 @@
         </li>
     </ul>
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- Modernizr -->
 <script src="{{site.production_url}}/blog-jekyll/js/vendor/modernizr-3.5.0.min.js"></script>

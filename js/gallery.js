@@ -27,6 +27,8 @@ function _musicControl () {
     });
 }
 _musicControl();
+
+//画廊
 $(function() {
 
     var $mywrap 		= $('#wrap');

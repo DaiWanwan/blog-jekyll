@@ -20,8 +20,8 @@
 </p>
 <![endif]-->
 
-<!-- Add your site or application content here -->
 
+<!--导航栏-->
 <header >
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -64,7 +64,7 @@
     </nav>
 </header>
 
-
+<!--首页大poster开始-->
 <div id="poster">
     <div class="container-fluid">
         <div class="banner row">
@@ -97,7 +97,9 @@
 
 </div>
 
+<!--首页大poster结束-->
 
+<!--博客列表开始-->
 <main id="blogList">
     <div class="blog-List">
         <div class="container-fluid">
@@ -107,9 +109,11 @@
                     <div class="back-1">
                         <div class="back-2">
                             <div class="row">
+                                <!--博客列表概述-->
                                 <div class="col-lg-8 col-md-8 ">
                                     {{content}}
                                 </div>
+                                <!--侧边小徽章-->
                                 <div class="col-lg-4 col-md-4">
                                     <ul class="sidebar-outline">
                                         <li class="cell">
@@ -137,6 +141,7 @@
                                             </div>
                                         </li>
                                     </ul>
+                                    <!--小树-->
                                     <canvas id='tree' width="800" height="800" class="visible-lg visible-md"></canvas>
                                 </div>
                             </div>
@@ -148,12 +153,14 @@
         </div>
     </div>
 </main>
+<!--博客列表结束-->
 
-
+<!--返回顶端-->
 <diV class="btn btn-success return-top">
     <div class="return-top-a"><i class="fa fa-angle-double-up"></i>Top</div>
 </diV>
 
+<!--页脚开始-->
 <footer>
     <ul class="_footer">
         <li>
@@ -175,20 +182,7 @@
         </li>
     </ul>
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--页脚结束-->
 
 <!-- Modernizr -->
 <script src="{{site.production_url}}/blog-jekyll/js/vendor/modernizr-3.5.0.min.js"></script>
