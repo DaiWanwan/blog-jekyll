@@ -6266,7 +6266,7 @@ body {
   display: block;
 }
 body {
-  background: rgba(110, 170, 103, 0.56) url(../assets/img/backgroud.jpg) no-repeat fixed;
+  background: #9cb499 url(../assets/img/backgroud.jpg) no-repeat fixed;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
@@ -6296,7 +6296,7 @@ ul._footer > li > a:focus {
   color: #70ff5a;
 }
 ul._footer-fixed-bottom {
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 html,
