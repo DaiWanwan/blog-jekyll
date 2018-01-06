@@ -6266,7 +6266,7 @@ body {
   display: block;
 }
 body {
-  background: url(../assets/img/backgroud.jpg) no-repeat fixed;
+  background: rgba(110, 170, 103, 0.56) url(../assets/img/backgroud.jpg) no-repeat fixed;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
@@ -6344,6 +6344,7 @@ body {
   border: 5px solid #ffffff;
   border-radius: 50%;
   overflow: hidden;
+  background-color: rgba(109, 168, 103, 0.56);
   background-size: cover;
   position: relative;
   top: 50%;
