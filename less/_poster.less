@@ -22,7 +22,7 @@ html,body{
         left: 0;
         top: 55%;
         margin: -195px 0 0 0;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.65);
         @media (max-width: 991px){
             height: 576px;
             position: absolute;
@@ -42,7 +42,7 @@ html,body{
             border: 5px solid #ffffff;
             border-radius: 50%;
             overflow: hidden;
-            background-color: rgba(109, 168, 103, 0.56);
+            background-color: rgba(110, 170, 103, 0.56);
             background-size: cover;
             position: relative;
             top: 50%;
@@ -162,17 +162,35 @@ html,body{
                 cursor: pointer;
             }
             >div:nth-child(1){
+                font-size: 28px;
+                line-height: 28px;
                 color:rgba(0,0,0,0.73);
                 -webkit-animation: bounce-up 1.4s linear infinite;
                 animation: bounce-up 1.4s linear infinite;
+                @media (max-width: 991px) {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
             }
             >div:nth-child(2){
+                font-size: 42px;
+                line-height: 42px;
                 color:rgba(0,0,0,0.83);
                 -webkit-animation: bounce-up 1.4s linear infinite;
                 animation: bounce-up 1.4s linear infinite;
+                @media (max-width: 991px) {
+                    font-size: 28px;
+                    line-height: 28px;
+                }
             }
             >div:nth-child(3){
+                font-size: 56px;
+                line-height: 56px;
                 color:rgba(0,0,0,0.93);
+                @media (max-width: 991px) {
+                    font-size: 42px;
+                    line-height: 42px;
+                }
             }
             .section-a-hover{
                 color: #91261a

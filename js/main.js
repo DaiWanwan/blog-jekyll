@@ -36,6 +36,15 @@ $(document).ready(function() {
             scrollTop: $("#blogList").offset().top }, {duration: 600,easing: "swing"});
         return false;
     });
+    $(window).scroll(function(){   //当窗口滑动到某一位置执行
+        var secHight=$("#poster").height();
+        if($(window).scrollTop()>= secHight) {
+            $("#nav-blog").addClass("active")
+
+        } else {
+            $("#nav-blog").removeClass("active")
+        }
+    });
     //徽章的位置和搜索
     function sidebar() {
         // 徽章相对网页位置
