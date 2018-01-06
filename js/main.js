@@ -1,26 +1,26 @@
 $(document).ready(function() {
 //导航栏提示框
-        var delay={"show": 800, "hide": 800};
-        var selector=$('.navbar-nav > li');
-        $('[data-toggle="tooltip"]').tooltip(delay,selector);
+    var delay={"show": 800, "hide": 800};
+    var selector=$('.navbar-nav > li');
+    $('[data-toggle="tooltip"]').tooltip(delay,selector);
 
 //    音乐的播放和暂停
-        function _musicControl () {
-            var music = document.getElementById("bgMusic");
-            $(".musicControl").click(function(){
-                event.stopPropagation();
-                if(music.paused){
-                    music.play();
-                    $(".musicControl>i").removeClass("fa-play").addClass("fa-pause");
-                    $(".musicControl+img").removeClass("picture-pause");
-                }else{
-                    music.pause();
-                    $(".musicControl>i").removeClass("fa-pause").addClass("fa-play");
-                    $(".musicControl+img").addClass("picture-pause");
-                }
-            });
-        }
-        _musicControl();
+    function _musicControl () {
+        var music = document.getElementById("bgMusic");
+        $(".musicControl").click(function(){
+            event.stopPropagation();
+            if(music.paused){
+                music.play();
+                $(".musicControl>i").removeClass("fa-play").addClass("fa-pause");
+                $(".musicControl+img").removeClass("picture-pause");
+            }else{
+                music.pause();
+                $(".musicControl>i").removeClass("fa-pause").addClass("fa-play");
+                $(".musicControl+img").addClass("picture-pause");
+            }
+        });
+    }
+    _musicControl();
 //    箭头变色和网页滑动
     $(".navigator .text-a").hover(function(){
         $(".navigator .text-a>span").addClass("section-a-hover");
@@ -31,7 +31,11 @@ $(document).ready(function() {
             scrollTop: $("#blogList").offset().top }, {duration: 600,easing: "swing"});
         return false;
     });
-
+    $("#nav-blog").click(function () {
+        $("html, body").animate({
+            scrollTop: $("#blogList").offset().top }, {duration: 600,easing: "swing"});
+        return false;
+    });
     //徽章的位置和搜索
     function sidebar() {
         // 徽章相对网页位置
@@ -45,12 +49,12 @@ $(document).ready(function() {
                 _searchlist.animate({marginTop:offsetop},{duration:1000,queue:false},"ease-out")
             }
 
+
         });
 
         $(window).on("resize",function(){
             if($(window).width()<992) {
                 _searchlist.css({marginTop:57+"px"});
-
             }
         });
         //   侧边栏搜索功能的实
@@ -107,6 +111,7 @@ $(document).ready(function() {
 
     //    小树生长
     var drawtree = function (ctx,startx,starty,length,angle,depth,branchWidth){
+
         var rand=Math.random,
             n_length,n_angle,n_depth,maxbranch=4,
             endx,endy,maxangle=2 * Math.PI / 4;
@@ -147,8 +152,6 @@ $(document).ready(function() {
     var ctx= canvas.getContext('2d');
 //初始化的树
     drawtree(ctx,500,770,100,-Math.PI / 2, 12, 12);
-
-
 
 
     window.onresize=resizeBannerImage;//当窗口改变宽度时执行此函数

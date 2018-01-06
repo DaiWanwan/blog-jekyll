@@ -5,11 +5,11 @@
 html,body{
     height: 100%;
     display: block;
-    min-width: 768px;
 }
 p{
     margin: 0;
 }
+
 #loading{
     width: 100%;
     height: 100%;
@@ -19,12 +19,16 @@ p{
     top: 0;
     z-index: 999;
 }
-#wrap{
+main{
     width:100%;
     height: 80%;
-    min-height: 720px;
+}
+#wrap{
+    width:100%;
+    height: 100%;
     margin-top: 45px;
-    background-color: @navber-Normal-Bg;
+    margin-bottom: 45px;
+    background-color: rgba(0,0,0,0.45);
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.8);
     overflow: hidden;
     /*子元素获得3D效果支持*/
@@ -37,6 +41,10 @@ p{
         z-index: 1;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
+        @media (max-width:489px) {
+            width: 204px;
+            height: 252px;
+        }
         .side{
             width:100%;
             height: 100%;
@@ -55,6 +63,10 @@ p{
                 line-height: 260px;
                 overflow: hidden;
                 text-align: center;
+                @media (max-width:489px) {
+                    height: 208px;
+                    line-height: 208px;
+                }
                 >img{
                     width: 95%;
                     margin-top:-20px;
@@ -65,13 +77,21 @@ p{
                 text-align: center;
                 font-size: 16px;
                 line-height: 50px;
-                color: #085500;
+                color: #0e9a00cc;
+                @media (max-width:489px) {
+                    font-size: 14px;
+                    line-height: 30px;
+                }
             }
         }
         .side-back>p{
-            color: #333333;
+            color: #666666;
             font-size: 13px;
             line-height: 1.5em;
+            @media (max-width:489px) {
+                font-size: 11px;
+                line-height: 1.5em;
+            }
         }
     }
 }
@@ -129,9 +149,9 @@ p{
         width:80%;
         height: 30px;
         line-height: 30px;
-        position: absolute;
+        position: fixed;
         left:10%;
-        bottom: 20px;
+        bottom: 35px;
         z-index: 999;
         /*background-color: #ffffff;*/
         text-align: center;
@@ -141,13 +161,13 @@ p{
             display: inline-block;
             line-height: 30px;
             cursor: pointer;
-            background-color: #0d7601;
+            background-color: rgba(60, 216, 67, 0.78);
             text-align: center;
             border-radius: 50%;
             /*正常状态下缩小标签，这样点击时放大就不会影响其他*/
-            -webkit-transform: scale(0.58);
+            -webkit-transform: scale(0.48);
             -webkit-transition: all 0.6s;
-            -moz-transform: scale(0.58);
+            -moz-transform: scale(0.48);
             -moz-transition: all 0.6s;
             i{
                 color: #ffffff;
@@ -160,7 +180,7 @@ p{
         }
         .i_back{
             transform:rotateY(-180deg);
-            background-color: #113609;
+            background-color: #236814;
         }
     }
 }
