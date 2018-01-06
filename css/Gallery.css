@@ -6344,7 +6344,7 @@ main {
   display: inline-block;
   line-height: 30px;
   cursor: pointer;
-  background-color: #228926;
+  background-color: #229527;
   text-align: center;
   border-radius: 50%;
   /*正常状态下缩小标签，这样点击时放大就不会影响其他*/
@@ -6363,5 +6363,5 @@ main {
 }
 #wrap .nav .i_back {
   transform: rotateY(-180deg);
-  background-color: #015903;
+  background-color: #016504;
 }
