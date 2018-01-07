@@ -6189,14 +6189,17 @@ ul._footer-fixed-bottom {
 html,
 body {
   height: 100%;
-  min-height: 635px;
+  min-height: 665px;
   min-width: 991px;
+}
+header {
+  z-index: 999;
 }
 .conTainer {
   width: 100%;
   height: 100%;
+  min-height: 100%;
   position: relative;
-  z-index: 10;
 }
 .booklet {
   -moz-box-shadow: 0 0 1px #fff;
@@ -6248,11 +6251,11 @@ body {
   height: 590px;
   position: relative;
   background: transparent url(../assets/img/bg.png) no-repeat 9px 27px;
-  z-index: 999;
+  z-index: 99;
 }
 @media (max-height: 710px) {
   .book_wrapper {
-    margin-top: -30px;
+    margin-top: 0;
   }
 }
 .book_wrapper .b-pagelist {
