@@ -25,105 +25,109 @@
 <![endif]-->
 
 
-<!--导航栏开始-->
-<header >
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="navbar-header col-md-2" >
-                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target="#navbar-collapse-right" aria-expanded="false">
-                        <span class="sr-only">导航</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://daiwanwan.github.io/blog-jekyll/index.html"><img src="assets/img/logo2.png" alt="logo"></a>
-                </div>
-                <div class="col-lg-8 right">
-                    <div class="navbar-collapse collapse" id="navbar-collapse-right">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="https://daiwanwan.github.io/blog-jekyll/index.html" name="Home" data-toggle="tooltip" data-placement="bottom" title="Home">
-                                <i class="fa fa-home"></i><span class="nav-mess"> Home</span>
-                            </a></li>
-                            <li  class="active"><a href="https://daiwanwan.github.io/blog-jekyll/Gallery.html" name="Gallery" data-toggle="tooltip" data-placement="bottom" title="Gallery">
-                                <i class="fa fa-image"></i> <span class="nav-mess"> Gallery</span>
-                            </a></li>
-                            <li><a href="https://daiwanwan.github.io/blog-jekyll/Mood.html" name="Mood" data-toggle="tooltip" data-placement="bottom" title="Mood">
-                                <i class="fa fa-cloud"></i> <span class="nav-mess"> Mood</span>
-                            </a></li>
-                            <li><a href="https://daiwanwan.github.io/blog-jekyll/About.html" name="About" data-toggle="tooltip" data-placement="auto" title="About">
-                                <i class="fa fa-user"></i> <span class="nav-mess"> About</span>
-                            </a></li>
-                            <li class="top-music visible-lg visible-md visible-sm">
-                                <audio id="bgMusic" src="https://daiwanwan.github.io/blog-jekyll/assets/img/music.mp3" autoplay loop="loop"></audio>
-                                <a class="musicControl" name="Music" data-toggle="tooltip" data-placement="auto" title="Music">
-                                    <i class="fa fa-pause"></i><span class="nav-mess"> Music</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-        </div>
-    </nav>
-</header>
-<!--导航栏结束-->
+
 
 <!--loading界面-->
 <div id="loading" class="loading"></div>
 
-
-<!--主要界面开始-->
-<main>
-    <div class="wrap" id="wrap">
-        <!--.photo负责位置的居中和旋转-->
-        <div class="photo photo_front" onclick="turn(this)" id="photo_{{index}}">
-            <!--.photo-wrap 负责海报的正面与反面的翻转-->
-            <div class="photo-wrap">
-                <!--.side-front 海报正面-->
-                <div class="side side-front ">
-                    <p class="image">
-                        <img src="assets/images/{{img}}" alt="image">
-                    </p>
-                    <p class="caption">{{caption}}</p>
+<div class="conTainer">
+    <!--导航栏开始-->
+    <header >
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="navbar-header col-md-2" >
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-collapse-right" aria-expanded="false">
+                            <span class="sr-only">导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="https://daiwanwan.github.io/blog-jekyll/index.html"><img src="assets/img/logo2.png" alt="logo"></a>
+                    </div>
+                    <div class="col-lg-8 right">
+                        <div class="navbar-collapse collapse" id="navbar-collapse-right">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="https://daiwanwan.github.io/blog-jekyll/index.html" name="Home" data-toggle="tooltip" data-placement="bottom" title="Home">
+                                    <i class="fa fa-home"></i><span class="nav-mess"> Home</span>
+                                </a></li>
+                                <li  class="active"><a href="https://daiwanwan.github.io/blog-jekyll/Gallery.html" name="Gallery" data-toggle="tooltip" data-placement="bottom" title="Gallery">
+                                    <i class="fa fa-image"></i> <span class="nav-mess"> Gallery</span>
+                                </a></li>
+                                <li><a href="https://daiwanwan.github.io/blog-jekyll/Mood.html" name="Mood" data-toggle="tooltip" data-placement="bottom" title="Mood">
+                                    <i class="fa fa-cloud"></i> <span class="nav-mess"> Mood</span>
+                                </a></li>
+                                <li><a href="https://daiwanwan.github.io/blog-jekyll/About.html" name="About" data-toggle="tooltip" data-placement="auto" title="About">
+                                    <i class="fa fa-user"></i> <span class="nav-mess"> About</span>
+                                </a></li>
+                                <li class="top-music visible-lg visible-md visible-sm">
+                                    <audio id="bgMusic" src="https://daiwanwan.github.io/blog-jekyll/assets/img/music.mp3" autoplay loop="loop"></audio>
+                                    <a class="musicControl" name="Music" data-toggle="tooltip" data-placement="auto" title="Music">
+                                        <i class="fa fa-pause"></i><span class="nav-mess"> Music</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
-                <!--.side-back 海报反面-->
-                <div class="side side-back">
-                    <p class="desc">{{desc}}</p>
+            </div>
+        </nav>
+    </header>
+    <!--导航栏结束-->
+
+    <!--主要界面开始-->
+    <main>
+        <div class="wrap" id="wrap">
+            <!--.photo负责位置的居中和旋转-->
+            <div class="photo photo_front" onclick="turn(this)" id="photo_{{index}}">
+                <!--.photo-wrap 负责海报的正面与反面的翻转-->
+                <div class="photo-wrap">
+                    <!--.side-front 海报正面-->
+                    <div class="side side-front ">
+                        <p class="image">
+                            <img src="assets/images/{{img}}" alt="image">
+                        </p>
+                        <p class="caption">{{caption}}</p>
+                    </div>
+                    <!--.side-back 海报反面-->
+                    <div class="side side-back">
+                        <p class="desc">{{desc}}</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<!--主要界面结束-->
+    <!--主要界面结束-->
 
-<!--页脚开始-->
-<footer>
-    <ul class="_footer _footer-fixed-bottom">
-        <li>
-            <a href="https://weibo.com/5856659777/profile?topnav=1&wvr=6&is_all=1">
-                <i class="icon fa fa-weibo"></i>
-                <span>微博</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span>© 2017 戴婉婉</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/DaiWanwan">
-                <i class="icon fa fa-github"></i>
-                <span>GitHub</span>
-            </a>
-        </li>
-    </ul>
-</footer>
-<!--页脚结束-->
+    <!--页脚开始-->
+    <footer>
+        <ul class="_footer _footer-fixed-bottom">
+            <li>
+                <a href="https://weibo.com/5856659777/profile?topnav=1&wvr=6&is_all=1">
+                    <i class="icon fa fa-weibo"></i>
+                    <span>微博</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>© 2017 戴婉婉</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/DaiWanwan">
+                    <i class="icon fa fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!--页脚结束-->
+</div>
+
 
 
 
