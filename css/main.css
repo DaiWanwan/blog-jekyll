@@ -6351,6 +6351,7 @@ body {
   left: 50%;
   z-index: 10;
   margin: -46px 0 0 -190px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 991px) {
@@ -6663,6 +6664,7 @@ body {
   height: 30px;
   border-radius: 50%;
   background: #75ce66;
+  -webkit-box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 #blogList .back-1 > .back-2 #cd-timeline .cd-timeline-block > .cd-timeline-img > i {
@@ -6680,6 +6682,7 @@ body {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 0.25em;
   padding: 1em;
+  -webkit-box-shadow: 0 3px 0 rgba(140, 217, 109, 0.5);
   box-shadow: 0 3px 0 rgba(140, 217, 109, 0.5);
 }
 #blogList .back-1 > .back-2 #cd-timeline .cd-timeline-block .cd-timeline-content::before {
@@ -6771,6 +6774,7 @@ body {
 #blogList .back-1 > .back-2 .sidebar-outline {
   position: relative;
   margin: 57px 10px 0 ;
+  -webkit-box-shadow: 0 0 5px 2px rgba(140, 217, 109, 0.5);
   box-shadow: 0 0 5px 2px rgba(140, 217, 109, 0.5);
   z-index: 10;
   padding: 0;

@@ -6231,6 +6231,7 @@ main .back-1 .back-2 .title .gap-line {
   height: 2px;
   background-color: #4cae4c;
   margin: 2px;
+  -webkit-box-shadow: 0 0 10px rgba(76, 174, 76, 0.5);
   box-shadow: 0 0 10px rgba(76, 174, 76, 0.5);
 }
 main .back-1 .back-2 .p-section h3 {
@@ -6255,6 +6256,7 @@ main .back-1 .back-2 .p-section img {
   border-radius: 10px;
   width: 80%;
   height: auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 main .back-1 .back-2 .p-section ul {
