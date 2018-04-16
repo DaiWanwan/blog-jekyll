@@ -4934,6 +4934,12 @@ main .project .project-list .tags .label {
   background-color: rgba(62, 149, 62, 0.6);
   cursor: pointer;
 }
+main .project .project-list .p-img {
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin: 0 10px 10px 10px;
+}
 main .project .project-list p a {
   color: #b60303;
   text-decoration: none;

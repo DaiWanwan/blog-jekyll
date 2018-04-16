@@ -26,8 +26,7 @@ function _musicControl () {
 _musicControl();
 
 //   飘絮效果开始
-var BloomFall = function(id, initConfig)
-{
+var BloomFall = function(id, initConfig) {
     var config = {
         minSpeed   : 0.5,
         maxSpeed   : 1.5,
@@ -52,8 +51,7 @@ var BloomFall = function(id, initConfig)
     var frame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || function(cb) { return setTimeout(cb, 30) };
 
     //construct
-    var construct = function()
-    {
+    var construct = function() {
         for (var key in initConfig) {
             config[key] = initCcnfig[key];
         }
@@ -67,8 +65,7 @@ var BloomFall = function(id, initConfig)
         buildBlooms();
     };
 
-    var buildBlooms = function()
-    {
+    var buildBlooms = function() {
         blooms = new Array(config.bloomCount);
 
         for (var i = 0; i < config.bloomCount; i++) {
@@ -91,13 +88,11 @@ var BloomFall = function(id, initConfig)
         }
     };
 
-    this.run = function()
-    {
+    this.run = function() {
         tick();
     };
 
-    var tick = function()
-    {
+    var tick = function() {
         resize();
         engine.clearRect(0, 0, width, height);
         renderBlooms();
@@ -105,8 +100,7 @@ var BloomFall = function(id, initConfig)
         frame(tick);
     };
 
-    var resize = function()
-    {
+    var resize = function() {
         width  = target.clientWidth;
         height = target.clientHeight;
         rel    = width / height;
@@ -119,8 +113,7 @@ var BloomFall = function(id, initConfig)
         canvas.height = height;  //区域高度
     };
 
-    var renderBlooms = function()
-    {
+    var renderBlooms = function() {
         engine.fillStyle = 'hsla(' + config.color + ', 100%, 90%, 0.5)';
 
 
@@ -130,8 +123,7 @@ var BloomFall = function(id, initConfig)
 
     };
 
-    var renderBloom = function(index)
-    {
+    var renderBloom = function(index) {
         var bloom = blooms[index];
 
         var x  = bloom.x * width;

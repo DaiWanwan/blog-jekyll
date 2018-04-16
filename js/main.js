@@ -7,7 +7,7 @@ $(document).ready(function() {
 //    音乐的播放和暂停
     function _musicControl () {
         var music = document.getElementById("bgMusic");
-        $(".musicControl").click(function(){
+        $(".musicControl").click(function(event){
             event.stopPropagation();
             if(music.paused){
                 music.play();
