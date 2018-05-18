@@ -1,0 +1,195 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Doris·婉の博客-Demo</title>
+    <meta name="description" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--自定义的网页图标-->
+    <link rel="shortcut icon" href="./../assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="./../assets/img/favicon.png">
+
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <!--引入样式-->
+    <link rel="stylesheet" href="./../css/bloglist.min.css">
+    <link rel="stylesheet" href="./../css/iconfont.min.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">
+    You are using an <strong>outdated</strong> browser. Please
+    <a href="https://browsehappy.com/">upgrade your browser</a>
+    to improve your experience and security.
+</p>
+<![endif]-->
+<header >
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="navbar-header col-md-2" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navbar-collapse-right" aria-expanded="false">
+                        <span class="sr-only">导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://daiwanwan.github.io/blog-jekyll/"><img src="./../assets/img/logo2.png" alt="logo"></a>
+                </div>
+                <div class="col-lg-8 right">
+                    <div class="navbar-collapse collapse" id="navbar-collapse-right">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./../index.html" name="Home" data-toggle="tooltip" data-placement="bottom" title="Home">
+                                <i class="iconfont iconfont-28">&#xe60d;</i><span class="nav-mess"> Home</span>
+                            </a></li>
+                            <li  class="active"><a href="./../Demo.html" name="Demo" data-toggle="tooltip" data-placement="bottom" title="Demo">
+                                <i class="iconfont iconfont-28">&#xe611;</i><span class="nav-mess"> Demo</span>
+                            </a></li>
+                            <li><a href="./../Gallery.html" name="Gallery" data-toggle="tooltip" data-placement="bottom" title="Gallery">
+                                <i class="iconfont iconfont-28">&#xe674;</i><span class="nav-mess"> Gallery</span>
+                            </a></li>
+                            <li><a href="./../Mood.html" name="Mood" data-toggle="tooltip" data-placement="bottom" title="Mood">
+                                <i class="iconfont iconfont-28">&#xe7d2;</i><span class="nav-mess"> Mood</span>
+                            </a></li>
+                            <li><a href="./../About.html" name="About" data-toggle="tooltip" data-placement="auto" title="About">
+                                <i class="iconfont iconfont-28">&#xe630;</i><span class="nav-mess"> About</span>
+                            </a></li>
+                            <li class="top-music visible-lg visible-md visible-sm">
+                                <audio id="bgMusic" src="./../assets/img/music.mp3" autoplay loop="loop"></audio>
+                                <a class="musicControl" name="Music" data-toggle="tooltip" data-placement="auto" title="Music">
+                                    <i class="fa fa-pause"></i><span class="nav-mess"> Music</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="post-contents">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-1 col-sm-1">
+                </div>
+
+                <div class="col-lg-8 col-md-10 col-sm-10">
+                    <div class="back-1">
+                        <div class="back-2">
+                            <div class="title">
+                                <h1>2048小游戏</h1>
+                                <div class="time visible-lg visible-md">2018-05-12</div>
+                                <div class="gap-line"></div>
+                                <div class="gap-line"></div>
+                            </div>
+                            <div class="p-section">
+                                <h3><i class="iconfont">&#xe722;</i> 源代码</h3>
+                                <p>源代码地址：<a href="https://github.com/DaiWanwan/Games/tree/master/2048">GitHub</a></p>
+                                <p>如果觉得不错，记得赏个star哟~</p>
+                            </div>
+
+                            <div class="p-section">
+                                <h3><i class="iconfont">&#xe722;</i> 预览</h3>
+                                <h3><i class="iconfont">&#xe694;</i>
+                                    <a href="https://daiwanwan.github.io/Games/2048/index.html">在线预览（开始游戏）</a>
+                                </h3>
+                                <div>
+                                    <p><i class="iconfont">&#xe655;</i> PC端：使用键盘上下左右控制</p>
+                                    <div class="image">
+                                        <img class="img-fix-width" src="./../assets/demoinage/2048-web.gif" alt="2048-phone">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p><i class="iconfont">&#xe655;</i> 移动端：手指滑动控制</p>
+                                    <div class="image">
+                                        <img class="img-fix-width" src="./../assets/demoinage/2048-phone.gif" alt="2048-phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-section">
+                                <h3><i class="iconfont">&#xe722;</i> 技术内容</h3>
+                                <p><span class="min-title">游戏架构</span> ：MVC，由HTML和CSS搭建界面UI，主逻辑由JS和jQuery编写，并且操作页面的数据。</p>
+                                <p><span class="min-title">初始化</span> ：使用JS绘制4*4的小方格，同时初始化设置数字为0。当数字为0时，色块小方格不显示。</p>
+                                <p><span class="min-title">移动细节</span>  ：首先判断是否可以移动（该方向是否有数字，数字是否与自己相等）。若可以移动分为两种情况，1.左侧为空，2.左侧数字和自己一样。</p>
+                                <p><span class="min-title">颜色变化</span>  ：根据小方格数字值的大小，给小方格样式设置不同颜色。</p>
+                                <p><span class="min-title">数字变化</span>  ：本身的数字加上将要移动过来的小方格内的数字。</p>
+                            </div>
+                            <div class="gap-line"></div>
+                            <div class="tags">
+                                <span class="label">jQuery</span>
+                                <span class="label">JavaScript</span>
+                                <span class="label">CSS</span>
+                                <span class="label">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="post">-->
+                        <!--<a href="../index.html">-->
+                            <!--<button type="button" href="index.html" class="btn btn-success prev"><i class="icon fa fa-chevron-left"></i> 返回首页</button>-->
+                        <!--</a>-->
+                        <!--<a href="blog-2.html">-->
+                            <!--<button type="button" class="btn btn-success next">下一篇 <i class="icon fa fa-chevron-right"></i></button>-->
+                        <!--</a>-->
+
+                    <!--</div>-->
+                </div>
+                <div class="col-lg-2 col-md-1 col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<diV class="btn btn-success return-top">
+    <div class="return-top-a"><i class="iconfont">&#xe62d;</i>Top</div>
+</diV>
+<footer>
+    <ul class="_footer">
+        <li>
+            <a href="https://weibo.com/5856659777/profile?topnav=1&wvr=6&is_all=1">
+                <i class="icon fa fa-weibo"></i>
+                <span>微博</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>© 2017 戴婉婉</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/DaiWanwan">
+                <i class="icon fa fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+<!-- Modernizr -->
+<script src="./../js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Respond.js for IE 8 or less only -->
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="./../js/vendor/respond.min.js"></script>
+<![endif]-->
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="./../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="./../js/plugins.min.js"></script>
+
+<script src="./../js/demo.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
+

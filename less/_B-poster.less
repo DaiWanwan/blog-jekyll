@@ -54,14 +54,20 @@ main {
             .p-section{
                 h3{
                     font-size: 28px;
+                    i{
+                        color:#3faa05;
+                        font-size: 26px;
+                    }
                 }
-                i{
-                    color:#3faa05;
-                }
+
                 p{
                     text-indent: 2em;
-                    font-size: 1.2em;
+                    font-size: 1.4em;
                     line-height: 1.68em;
+                    .min-title{
+                        display: inline-block;
+                        color:#3faa05 ;
+                    }
                 }
                 pre>code{
                     font-size: 1.25em;
@@ -69,17 +75,21 @@ main {
                 .image{
                     text-align: center;
                     padding: 10px;
-                }
-                img{
-                    border-radius: 10px;
-                    width: 80%;
-                    height: auto;
-                    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    img{
+                        border-radius: 10px;
+                        width: 80%;
+                        min-width: 300px;
+                        height: auto;
+                        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    }
+                    .img-fix-width{
+                        max-width: 470px;
+                    }
                 }
                 ul{
                     margin-left: 2em ;
-                    font-size: 1.1em ;
+                    font-size: 1.2em ;
                     line-height: 1.5em ;
                     list-style-type: none;
                 }
