@@ -16,7 +16,7 @@
 
     <!--<link rel="stylesheet" href="css/bootstrap.css">-->
     <!--引入样式-->
-    <link rel="stylesheet" href="css/About.min.css">
+    <link rel="stylesheet" href="css/Demo.min.css">
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -31,7 +31,7 @@
 
 
 
-<div class="conTainer">
+<div class="container-wrapper">
 
     <!--导航栏开始-->
     <header >
@@ -83,11 +83,72 @@
     </header>
     <!--导航栏结束-->
     <!--主要内容开始-->
-<main>
-    <div>
-        <a href="./demos/game-2048.html">2048小游戏</a>
-    </div>
-</main>
+
+    <main>
+        <div class="main-wrapper">
+            <div class="row" >
+                <div class="col-lg-2 col-md-1 visible-md visible-lg col-xs-1 visible-xs"></div>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10">
+                    <div  class="cell">
+                        <a href="demos/sell-elm.html" target="_blank">
+                        <img src="assets/demoimage/sell-init.jpg">
+                        <div class="details">
+                            <p class="title">Vue.js 仿手机外卖APP</p>
+                            <div class="description">
+                                <ul>
+                                    <li class="p-info"> 使用Vue.js+ES6+Webpack等前端最新最热的技术，采用了组件化、模块化的开发方式；</li>
+                                    <li class="p-info"> Node.js 作为后端支持，使用vue-router开发单页应用，vue-resource与后端数据交互；</li>
+                                    <li class="p-info"> 包含三个模块：商品区、评价区和商家详情区，商品区包含购物车、商品详情弹出层等；</li>
+                                    <li class="p-info"> 实现了商品导航栏的联动、购物车的数据绑定、添加商品的小球动画，星级评分等功能；</li>
+                                </ul>
+                            </div>
+                            <p class="date">27/01/2018</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10">
+                    <div  class="cell">
+                        <a href="demos/game-2048.html" target="_blank">
+                            <img src="assets/demoimage/2048-phone.jpg">
+                            <div class="details">
+                                <p class="title">Js 2048小游戏</p>
+                                <div class="description">
+                                    <ul>
+                                        <li class="p-info"> 使用jQuery+JS+CSS+HTML编写的2048小游戏；</li>
+                                        <li class="p-info"> 存在两种版本，web网页版和移动触控板；</li>
+                                        <li class="p-info"> web网页版使用键盘的上、下、左、右进行控制；</li>
+                                        <li class="p-info"> 移动端使用手指向不同方向滑动进行控制；</li>
+                                    </ul>
+                                </div>
+                                <p class="date">12/05/2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1 visible-md visible-lg col-xs-1 visible-xs"></div>
+                <div class="col-xs-12">
+                    <div  class="cell">
+                        <a href="demos/sell-elm.html" target="_blank">
+                            <img src="assets/demoimage/fish-init.jpg">
+                            <div class="details">
+                                <p class="title">HTML5 爱心鱼小游戏 </p>
+                                <div class="description">
+                                    <ul>
+                                        <li class="p-info"> 使用Vue.js+ES6+Webpack等前端最新最热的技术，采用了组件化、模块化的开发方式；</li>
+                                        <li class="p-info"> Node.js 作为后端支持，使用vue-router开发单页应用，vue-resource与后端数据交互；</li>
+                                        <li class="p-info"> 包含三个模块：商品区、评价区和商家详情区，商品区包含购物车、商品详情弹出层等；</li>
+                                        <li class="p-info"> 实现了商品导航栏的联动、购物车的数据绑定、添加商品的小球动画，星级评分等功能；</li>
+                                    </ul>
+                                </div>
+                                <p class="date">10/04/2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!--主要内容结束-->
     <!--页脚开始-->
@@ -117,9 +178,6 @@
 </div>
 
 
-<!--飘絮效果-->
-<!--<div id="target"></div>-->
-
 
 <!-- Modernizr -->
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -133,7 +191,8 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="js/plugins.min.js"></script>
 
-<script src="js/About.min.js"></script>
+<script src="js/basic.min.js"></script>
+<script src="js/demo.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>

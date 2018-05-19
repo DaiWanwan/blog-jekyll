@@ -64,10 +64,6 @@ main {
                     text-indent: 2em;
                     font-size: 1.4em;
                     line-height: 1.68em;
-                    .min-title{
-                        display: inline-block;
-                        color:#3faa05 ;
-                    }
                 }
                 pre>code{
                     font-size: 1.25em;
@@ -100,6 +96,25 @@ main {
                     >i{
                         color: #000000;
                         font-size: 16px ;
+                    }
+                }
+                .t-list{
+                    font-size: 1.4em;
+                    line-height: 1.68em;
+                    margin: 2px 0 2px 10px;
+                    overflow: hidden;
+                    .min-title{
+                        display: inline-block;
+                        color:#3faa05 ;
+                    }
+                }
+                .tags {
+                    margin: 10px 0 0 6px;
+                    .label{
+                        background-color: rgb(62, 149, 62);
+                        color: #fff;
+                        padding: 5px 10px;
+                        cursor: pointer;
                     }
                 }
                 .browser{
@@ -166,7 +181,7 @@ main {
     width: 50px;
     height: 70px;
     background: rgba(48, 151, 55, 0.9);
-    border-radius: 0.25em;
+    border-radius: 6px;
     position: fixed;
     bottom: 40px;
     right: 35px;
@@ -174,9 +189,14 @@ main {
     display: none;
     cursor: pointer;
     z-index: 999;
+    -webkit-transition: background-color 0.3s linear .1s;
+    -moz-transition: background-color 0.3s linear .1s;
+    -ms-transition: background-color 0.3s linear .1s;
+    -o-transition: background-color 0.3s linear .1s;
+    transition: background-color 0.3s linear .1s;
     &:focus,
     &:hover{
-        background: rgba(57, 187, 64, 0.9);
+        background-color: rgba(57, 187, 64, 0.9);
     }
     .return-top-a{
         color: white;

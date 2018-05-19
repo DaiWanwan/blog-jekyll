@@ -6246,10 +6246,6 @@ main .back-1 .back-2 .p-section p {
   font-size: 1.4em;
   line-height: 1.68em;
 }
-main .back-1 .back-2 .p-section p .min-title {
-  display: inline-block;
-  color: #3faa05 ;
-}
 main .back-1 .back-2 .p-section pre > code {
   font-size: 1.25em;
 }
@@ -6282,6 +6278,25 @@ main .back-1 .back-2 .p-section h4 {
 main .back-1 .back-2 .p-section h4 > i {
   color: #000000;
   font-size: 16px ;
+}
+main .back-1 .back-2 .p-section .t-list {
+  font-size: 1.4em;
+  line-height: 1.68em;
+  margin: 2px 0 2px 10px;
+  overflow: hidden;
+}
+main .back-1 .back-2 .p-section .t-list .min-title {
+  display: inline-block;
+  color: #3faa05 ;
+}
+main .back-1 .back-2 .p-section .tags {
+  margin: 10px 0 0 6px;
+}
+main .back-1 .back-2 .p-section .tags .label {
+  background-color: #3e953e;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 main .back-1 .back-2 .p-section .browser {
   display: block;
@@ -6346,7 +6361,7 @@ main .post .next {
   width: 50px;
   height: 70px;
   background: rgba(48, 151, 55, 0.9);
-  border-radius: 0.25em;
+  border-radius: 6px;
   position: fixed;
   bottom: 40px;
   right: 35px;
@@ -6354,10 +6369,15 @@ main .post .next {
   display: none;
   cursor: pointer;
   z-index: 999;
+  -webkit-transition: background-color 0.3s linear 0.1s;
+  -moz-transition: background-color 0.3s linear 0.1s;
+  -ms-transition: background-color 0.3s linear 0.1s;
+  -o-transition: background-color 0.3s linear 0.1s;
+  transition: background-color 0.3s linear 0.1s;
 }
 .return-top:focus,
 .return-top:hover {
-  background: rgba(57, 187, 64, 0.9);
+  background-color: rgba(57, 187, 64, 0.9);
 }
 .return-top .return-top-a {
   color: white;
