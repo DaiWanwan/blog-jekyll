@@ -6241,10 +6241,14 @@ main .back-1 .back-2 .p-section h3 i {
   color: #3faa05;
   font-size: 26px;
 }
+main .back-1 .back-2 .p-section .min-h3 {
+  margin-left: 1em;
+}
 main .back-1 .back-2 .p-section p {
   text-indent: 2em;
   font-size: 1.4em;
   line-height: 1.68em;
+  margin-top: 10px;
 }
 main .back-1 .back-2 .p-section pre > code {
   font-size: 1.25em;
@@ -6264,6 +6268,17 @@ main .back-1 .back-2 .p-section .image img {
 main .back-1 .back-2 .p-section .image .img-fix-width {
   max-width: 470px;
 }
+main .back-1 .back-2 .p-section .image .max-img {
+  width: 100%;
+}
+main .back-1 .back-2 .p-section .p-img {
+  width: 200px;
+  height: 200px;
+  margin-left: 70px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 main .back-1 .back-2 .p-section ul {
   margin-left: 2em ;
   font-size: 1.2em ;
@@ -6279,18 +6294,8 @@ main .back-1 .back-2 .p-section h4 > i {
   color: #000000;
   font-size: 16px ;
 }
-main .back-1 .back-2 .p-section .t-list {
-  font-size: 1.4em;
-  line-height: 1.68em;
-  margin: 2px 0 2px 10px;
-  overflow: hidden;
-}
-main .back-1 .back-2 .p-section .t-list .min-title {
-  display: inline-block;
-  color: #3faa05 ;
-}
 main .back-1 .back-2 .p-section .tags {
-  margin: 10px 0 0 6px;
+  margin: 20px 0 0 36px;
 }
 main .back-1 .back-2 .p-section .tags .label {
   background-color: #3e953e;
