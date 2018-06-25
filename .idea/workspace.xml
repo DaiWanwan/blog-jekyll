@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="de3fbc09-3970-495b-b818-473a5f133928" name="Default" comment="data adjust">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo.html" afterPath="$PROJECT_DIR$/Demo.html" />
     </list>
     <list id="50b8b4c0-0136-42fe-9c65-8c451cfbe159" name="Rejected commit: Default" comment="data adjust" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -250,12 +249,12 @@
       <workItem from="1521708240604" duration="238000" />
       <workItem from="1528721362647" duration="539000" />
       <workItem from="1528723832523" duration="20000" />
-      <workItem from="1529938348143" duration="4000" />
+      <workItem from="1529938348143" duration="84000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13235000" />
+    <option name="totallyTimeSpent" value="13315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="162" y="0" width="1668" height="1010" extended-state="0" />
