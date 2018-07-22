@@ -7,13 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Fav and touch icons -->
-<link rel="shortcut icon" href="./../assets/img/favicon.ico">
-<link rel="apple-touch-icon" href="./../assets/img/favicon.png">
+<link rel="shortcut icon" href="{{site.production_url}}/blog-jekyll/assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="{{site.production_url}}/blog-jekyll/assets/img/favicon.png">
 
 <!--<link rel="stylesheet" href="css/main.css">-->
-<link rel="stylesheet" href="./../css/railscasts.css">
-<script  type="text/javascript" src="./../js/highlight.pack.js"></script>
-<link rel="stylesheet" href="./../css/bloglist.min.css">
+<link rel="stylesheet" href="{{site.production_url}}/blog-jekyll/css/railscasts.css">
+<script  type="text/javascript" src="{{site.production_url}}/blog-jekyll/js/highlight.pack.js"></script>
+<link rel="stylesheet" href="{{site.production_url}}/blog-jekyll/css/bloglist.min.css">
 <script type="text/javascript">
     hljs.initHighlightingOnLoad()
 </script>
@@ -37,28 +37,25 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="./../index.html"><img src="./../assets/img/logo2.png" alt="logo"></a>
+                    <a class="navbar-brand" href="https://daiwanwan.github.io/blog-jekyll/index.html"><img src="{{site.production_url}}/blog-jekyll/assets/img/logo2.png" alt="logo"></a>
                 </div>
                 <div class="col-lg-8 right">
                     <div class="navbar-collapse collapse" id="navbar-collapse-right">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="./../index.html" name="Home" data-toggle="tooltip" data-placement="bottom" title="Home">
+                            <li><a href="https://daiwanwan.github.io/blog-jekyll/index.html" name="Home" data-toggle="tooltip" data-placement="bottom" title="Home">
                                 <i class="fa fa-home"></i><span class="nav-mess"> Home</span>
                             </a></li>
-                            <li><a href="./../Demo.html" name="Demo" data-toggle="tooltip" data-placement="bottom" title="Demo">
-                                <i class="fa fa-cloud"></i> <span class="nav-mess"> Demo</span>
-                            </a></li>
-                            <li><a href="./../Gallery.html" name="Gallery" data-toggle="tooltip" data-placement="bottom" title="Gallery">
+                            <li><a href="https://daiwanwan.github.io/blog-jekyll/Gallery.html" name="Gallery" data-toggle="tooltip" data-placement="bottom" title="Gallery">
                                 <i class="fa fa-image"></i> <span class="nav-mess"> Gallery</span>
                             </a></li>
-                            <li><a href="./../Mood.html" name="Mood" data-toggle="tooltip" data-placement="bottom" title="Mood">
-                                <i class="fa fa-comments"></i> <span class="nav-mess"> Mood</span>
+                            <li><a href="https://daiwanwan.github.io/blog-jekyll/Mood.html" name="Mood" data-toggle="tooltip" data-placement="bottom" title="Mood">
+                                <i class="fa fa-cloud"></i> <span class="nav-mess"> Mood</span>
                             </a></li>
-                            <li><a href="./../About.html" name="About" data-toggle="tooltip" data-placement="auto" title="About">
+                            <li><a href="https://daiwanwan.github.io/blog-jekyll/About.html" name="About" data-toggle="tooltip" data-placement="auto" title="About">
                                 <i class="fa fa-user"></i> <span class="nav-mess"> About</span>
                             </a></li>
                             <li class="top-music visible-lg visible-md visible-sm">
-                                <audio id="bgMusic" src="./../assets/img/music.mp3" autoplay loop="loop"></audio>
+                                <audio id="bgMusic" src="https://daiwanwan.github.io/blog-jekyll/assets/img/music.mp3" autoplay loop="loop"></audio>
                                 <a class="musicControl" name="Music" data-toggle="tooltip" data-placement="auto" title="Music">
                                     <i class="fa fa-pause"></i><span class="nav-mess"> Music</span>
                                 </a>
@@ -96,20 +93,20 @@
                     <!--上一篇和下一篇的按钮-->
                     <div class="post">
                         {% if page.previous %}
-                        <a href="./{{ page.previous.url }}">
+                        <a href="{{site.production_url}}/blog-jekyll/{{ page.previous.url }}">
                             <button type="button" href="index.html" class="btn btn-success prev"><i class="icon fa fa-chevron-left"></i> 上一篇</button>
                         </a>
                         {% else %}
-                        <a href="./index.html">
+                        <a href="{{site.production_url}}/blog-jekyll/index.html">
                             <button type="button" href="index.html" class="btn btn-success prev"><i class="icon fa fa-chevron-left"></i> 返回首页</button>
                         </a>
                         {% endif %}
                         {% if page.next %}
-                        <a href="./{{ page.next.url }}">
+                        <a href="{{site.production_url}}/blog-jekyll/{{ page.next.url }}">
                             <button type="button" class="btn btn-success next">下一篇 <i class="icon fa fa-chevron-right"></i></button>
                         </a>
                         {% else %}
-                        <a href="./index.html">
+                        <a href="{{site.production_url}}/blog-jekyll/index.html">
                             <button type="button" class="btn btn-success next">返回首页 <i class="icon fa fa-chevron-right"></i></button>
                         </a>
                         {% endif %}
@@ -150,17 +147,17 @@
 </footer>
 
 <!-- Modernizr -->
-<script src="./../js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="{{site.production_url}}/blog-jekyll/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Respond.js for IE 8 or less only -->
 <!--[if (lt IE 9) & (!IEMobile)]>
-<script src="./../js/vendor/respond.min.js"></script>
+<script src="{{site.production_url}}/blog-jekyll/js/vendor/respond.min.js"></script>
 <![endif]-->
 <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-<script src="./../js/plugins.min.js"></script>
-<script src="./../js/basic.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="{{site.production_url}}/blog-jekyll/js/plugins.min.js"></script>
+<script src="{{site.production_url}}/blog-jekyll/js/basic.min.js"></script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
